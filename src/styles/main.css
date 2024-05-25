@@ -1,0 +1,104 @@
+@import url(./variables.css);
+
+/* Tabela de Unidades 
+
+px: Precisão fixa. Útil para bordas, margens e espaçamentos pequenos.
+%: Relativo ao elemento pai. Útil para layout responsivo e dimensionamento em relação ao contêiner pai.
+em: Relativo ao tamanho do texto dentro do elemento pai. Ideal para tamanho de fonte e espaçamento entre linhas.
+rem: Relativo ao tamanho do texto do elemento raiz. Útil para dimensionamento global baseado em um único ponto de referência.
+vw: Relativo à largura da viewport. Bom para elementos que se ajustam dinamicamente à largura do navegador.
+vh: Relativo à altura da viewport. Útil para elementos que se ajustam dinamicamente à altura do navegador.
+ch: Relativo à largura do caractere "0". Útil para dimensionar elementos com base no tamanho do caractere.
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Centralize o conteúdo na tela */
+    align-items: center; /* Centralize o conteúdo na tela */
+    width: 100%; /* Ajuste a largura máxima para que o conteúdo não ultrapasse a largura da tela */
+    height: 100%;
+
+    font-family: var(--font-family-sans-Roboto);
+    background-color: var(--background-primary);
+    color: var(--text-color);
+}
+
+@media (max-width: 760px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    width: 473px;
+    height: 298.55px;
+    top: 231px;
+    margin-left: 80px;
+    gap: 0px;
+    border-radius: 35px 0px 0px 0px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 6.9375em; /* 111px */
+    line-height: 8.13rem; /* 130.08px */
+}
+
+h6 {
+    font-size: 1.813em; /* 29px */
+    font-weight: 700;
+    line-height: 2.124em; /* 33.98px */
+}
+
+figure {
+    top: 51px;
+    left: 212px;
+    width: 431px;
+    height: 661px;
+    max-width: 100%;
+    position: sticky;
+}
+
+figure img {
+    height: 100%;
+    display: block;
+}
+
+button {
+    width: 199px;
+    height: 35.55px;
+    background-color: var(--button-primary);
+    border-radius: var(--border-radius-medium);
+    cursor: pointer;
+    border-style: none;
+    color: var(--border-text-primary);
+
+    font-weight: 700;
+    font-size: 1.375em;
+}
+
+#enter-index-button:hover {
+    color: var(--button-text-secundary-color);
+    background-color: var(--button-secundary);
+}
+
+main div {
+    margin-bottom: 66px;
+}
