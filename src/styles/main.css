@@ -1,0 +1,73 @@
+@import url(./variables.css);
+
+/* Tabela de Unidades 
+
+px: Precisão fixa. Útil para bordas, margens e espaçamentos pequenos.
+%: Relativo ao elemento pai. Útil para layout responsivo e dimensionamento em relação ao contêiner pai.
+em: Relativo ao tamanho do texto dentro do elemento pai. Ideal para tamanho de fonte e espaçamento entre linhas.
+rem: Relativo ao tamanho do texto do elemento raiz. Útil para dimensionamento global baseado em um único ponto de referência.
+vw: Relativo à largura da viewport. Bom para elementos que se ajustam dinamicamente à largura do navegador.
+vh: Relativo à altura da viewport. Útil para elementos que se ajustam dinamicamente à altura do navegador.
+ch: Relativo à largura do caractere "0". Útil para dimensionar elementos com base no tamanho do caractere.
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body, .container {
+    font-family: var(--font-family-sans-Roboto);
+    background-color: var(--background-primary);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center; /* Centralize o conteúdo na tela */
+    align-items: center; /* Centralize o conteúdo na tela */
+    max-width: 100%; /* Ajuste a largura máxima para que o conteúdo não ultrapasse a largura da tela */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 6.9375em;
+}
+
+figure {
+    top: 51px;
+    left: 212px;
+    max-width: 100%; /* Ajuste a largura máxima da figura */
+    height: auto; /* Permita que a altura seja ajustada automaticamente para manter a proporção */
+    margin: 0 auto; /* Centralize a figura na tela */
+}
+
+figure img {
+    width: 100%; /* Garanta que a imagem ocupe toda a largura disponível */
+    height: auto; /* Permita que a altura seja ajustada automaticamente para manter a proporção */
+    display: block; /* Evite espaços extras abaixo da imagem */
+}
+
+button {
+    width: 199px;
+    height: 35.55px;
+    background-color: var(--button-primary);
+    border-radius: var(--border-radius-medium);
+    cursor: pointer;
+    border-style: none;
+    color: var(--border-text-primary);
+
+    font-weight: 700;
+    font-size: 1.375em;
+}
