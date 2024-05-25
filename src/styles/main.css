@@ -23,34 +23,37 @@ html, body {
 }
 
 body {
-    display: flex;
-    justify-content: center; /* Centralize o conteúdo na tela */
-    align-items: center; /* Centralize o conteúdo na tela */
-    width: 100%; /* Ajuste a largura máxima para que o conteúdo não ultrapasse a largura da tela */
-    height: 100%;
-
     font-family: var(--font-family-sans-Roboto);
     background-color: var(--background-primary);
     color: var(--text-color);
+    position: relative;
 }
 
-@media (max-width: 760px) {
-    body {
-        flex-direction: column;
-    }
+figure {
+    position: absolute;
+    top: 51px;
+    left: 212px;
+    width: 431px;
+    height: 661px;
+    max-width: 100%;
+}
+
+figure img {
+    height: 100%;
+    display: block;
 }
 
 main {
+    position: absolute;
+    top: 232px;
+    left: 723px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-
     width: 473px;
     height: 298.55px;
-    top: 231px;
-    margin-left: 80px;
     gap: 0px;
     border-radius: 35px 0px 0px 0px;
 }
@@ -67,20 +70,6 @@ h6 {
     line-height: 2.124em; /* 33.98px */
 }
 
-figure {
-    top: 51px;
-    left: 212px;
-    width: 431px;
-    height: 661px;
-    max-width: 100%;
-    position: sticky;
-}
-
-figure img {
-    height: 100%;
-    display: block;
-}
-
 button {
     width: 199px;
     height: 35.55px;
@@ -89,7 +78,6 @@ button {
     cursor: pointer;
     border-style: none;
     color: var(--border-text-primary);
-
     font-weight: 700;
     font-size: 1.375em;
 }
@@ -101,4 +89,71 @@ button {
 
 main div {
     margin-bottom: 66px;
+}
+
+@media (max-width: 1200px) {
+    figure {
+        top: 20px;
+        left: 100px;
+        width: 300px;
+        height: auto;
+    }
+
+    main {
+        top: 150px;
+        left: 400px;
+        width: 350px;
+    }
+
+    h1 {
+        font-size: 5em;
+        line-height: 6rem;
+    }
+
+    h6 {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+
+    button {
+        width: 150px;
+        height: 30px;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 760px) {
+    body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    figure {
+        top: 10px;
+        left: 50px;
+        display: flex;
+        height: 416px;
+    }
+
+    main {
+        top: 100px;
+        left: 50px;
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 4em;
+        line-height: 5rem;
+    }
+
+    h6 {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    button {
+        width: 120px;
+        height: 25px;
+        font-size: 1em;
+    }
 }
