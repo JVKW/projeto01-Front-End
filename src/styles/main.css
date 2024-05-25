@@ -22,14 +22,22 @@ html, body {
     height: 100%;
 }
 
-body, .container {
-    font-family: var(--font-family-sans-Roboto);
-    background-color: var(--background-primary);
-    color: var(--text-color);
+body {
     display: flex;
     justify-content: center; /* Centralize o conteúdo na tela */
     align-items: center; /* Centralize o conteúdo na tela */
-    max-width: 100%; /* Ajuste a largura máxima para que o conteúdo não ultrapasse a largura da tela */
+    width: 100%; /* Ajuste a largura máxima para que o conteúdo não ultrapasse a largura da tela */
+    height: 100%;
+
+    font-family: var(--font-family-sans-Roboto);
+    background-color: var(--background-primary);
+    color: var(--text-color);
+}
+
+@media (max-width: 760px) {
+    body {
+        flex-direction: column;
+    }
 }
 
 main {
@@ -38,25 +46,39 @@ main {
     align-items: center;
     text-align: center;
     flex-direction: column;
+
+    width: 473px;
+    height: 298.55px;
+    top: 231px;
+    margin-left: 80px;
+    gap: 0px;
+    border-radius: 35px 0px 0px 0px;
 }
 
 h1 {
     font-weight: 700;
-    font-size: 6.9375em;
+    font-size: 6.9375em; /* 111px */
+    line-height: 8.13rem; /* 130.08px */
+}
+
+h6 {
+    font-size: 1.813em; /* 29px */
+    font-weight: 700;
+    line-height: 2.124em; /* 33.98px */
 }
 
 figure {
     top: 51px;
     left: 212px;
-    max-width: 100%; /* Ajuste a largura máxima da figura */
-    height: auto; /* Permita que a altura seja ajustada automaticamente para manter a proporção */
-    margin: 0 auto; /* Centralize a figura na tela */
+    width: 431px;
+    height: 661px;
+    max-width: 100%;
+    position: sticky;
 }
 
 figure img {
-    width: 100%; /* Garanta que a imagem ocupe toda a largura disponível */
-    height: auto; /* Permita que a altura seja ajustada automaticamente para manter a proporção */
-    display: block; /* Evite espaços extras abaixo da imagem */
+    height: 100%;
+    display: block;
 }
 
 button {
@@ -70,4 +92,13 @@ button {
 
     font-weight: 700;
     font-size: 1.375em;
+}
+
+#enter-index-button:hover {
+    color: var(--button-text-secundary-color);
+    background-color: var(--button-secundary);
+}
+
+main div {
+    margin-bottom: 66px;
 }
