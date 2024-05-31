@@ -16,17 +16,17 @@
         <main>
             <section id="form-page-p1" class="form-page">
                 <div>
-                    <h3>Necessities of working in financial markets</h6>
+                    <h3>Necessities of working in financial markets</h3>
                     <p>This research is to find the reasons for the failure of people in financial markets. The results of this survey will be emailed to you along with the analysis of our experienced experts.</p>
                 </div>
-                <a href="../../public/index.html">
-                    <button type="button">Back to Home</button>
-                </a>
-                <a href="">
-                    <button type="button">Fill out the form</button>
-                </a>
+                <div>
+                    <a href="../../public/index.html">
+                        <button type="button">Back to Home</button>
+                    </a>
+                    <button type="button" class="next-btn">Fill out the form</button>
+                </div>
             </section>
-
+        
             <section id="form-page-p2" class="form-page hide">
                 <form action="">
                     <div>
@@ -37,37 +37,31 @@
                         </select>
                     </div>
                     <div>
-                        <label for="">In which financial markets do you operate?</label><br>
+                        <label>In which financial markets do you operate?</label><br>
                         
                         <input type="radio" name="market_area" value="stock_market">
-                        <label for="market_area">stock market</label><br>
+                        <label>stock market</label><br>
                         
                         <input type="radio" name="market_area" value="foreign_market">
-                        <label for="market_area">foreign market</label><br>
+                        <label>foreign market</label><br>
                         
                         <input type="radio" name="market_area" value="commodity">
-                        <label for="market_area">commodity</label><br>
+                        <label>commodity</label><br>
                         
                         <input type="radio" name="market_area" value="bond_market">
-                        <label for="market_area">bond market</label><br>
+                        <label>bond market</label><br>
                         
                         <input type="radio" name="market_area" value="cryptocurrecy_market">
-                        <label for="market_area">cryptocurrecy market</label><br>
+                        <label>cryptocurrency market</label><br>
                     </div>
                 </form>
                 <div>
-                    <a href="../../public/index.html">
-                        <button type="button">Back</button>
-                    </a>
-                    <a href="">
-                        <button type="button">Next</button>
-                    </a>
-                    <a href="">
-                        <button type="button">Skip</button>
-                    </a>
+                    <button type="button" class="back-btn">Back</button>
+                    <button type="button" class="next-btn">Next</button>
+                    <button type="button" class="skip-btn">Skip</button>
                 </div>
             </section>
-
+        
             <section id="form-page-p3" class="form-page hide">
                 <form action="">
                     <div>
@@ -78,81 +72,63 @@
                         </select>
                     </div>
                     <div>
-                        <label for="">What resources have you used or are you using for your training?</label><br>
+                        <label>What resources have you used or are you using for your training?</label><br>
                         
-                        Books and articles YouTube tutorial videos online or face to face courses experience with little investment
-
                         <input type="radio" name="market_investment" value="Books_articles">
-                        <label for="market_investment">Books and articles</label><br>
+                        <label>Books and articles</label><br>
                         
                         <input type="radio" name="market_investment" value="youtube_videos">
-                        <label for="market_investment">YouTube tutorial videos</label><br>
+                        <label>YouTube tutorial videos</label><br>
                         
                         <input type="radio" name="market_investment" value="online_f2f">
-                        <label for="market_investment">online or face to face courses</label><br>
+                        <label>online or face to face courses</label><br>
                         
                         <input type="radio" name="market_investment" value="experience">
-                        <label for="market_investment">experience with little investment</label><br>
+                        <label>experience with little investment</label><br>
                     </div>
                 </form>
                 <div>
-                    <a href="../../public/index.html">
-                        <button type="button">Back</button>
-                    </a>
-                    <a href="">
-                        <button type="button">Next</button>
-                    </a>
-                    <a href="">
-                        <button type="button">Skip</button>
-                    </a>
+                    <button type="button" class="back-btn">Back</button>
+                    <button type="button" class="next-btn">Next</button>
+                    <button type="button" class="skip-btn">Skip</button>
                 </div>
             </section>
-
+        
             <section id="form-page-p4" class="form-page hide">
                 <form action="">
                     <label for="investment_details">If you or someone close to you has already made a loss on the investment, write down the details</label>
-
-                    <textarea name="investment_details" id="" rows="5" cols="50">
-
-                    </textarea>
+        
+                    <textarea name="investment_details" id="investment_details" rows="5" cols="50"></textarea>
                 </form>
                 <div>
-                    <a href="../../public/index.html">
-                        <button type="button">Back</button>
-                    </a>
-                    <a href="">
-                        <button type="button">Next</button>
-                    </a>
-                    <a href="">
-                        <button type="button">Skip</button>
-                    </a>
+                    <button type="button" class="back-btn">Back</button>
+                    <button type="button" class="next-btn">Next</button>
+                    <button type="button" class="skip-btn">Skip</button>
                 </div>
             </section>
-
+        
             <section id="form-page-p5" class="form-page hide">
                 <form action="">
                     <div>
-                        <label for="">Name:</label>
-                        <input type="text" placeholder="Nasser Toghiri">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Nasser Toghiri">
                     </div>
                     <div>
-                        <label for="">Email:</label>
-                        <input type="email" placeholder="N.Toghiri@Gmail.com">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="N.Toghiri@Gmail.com">
                     </div>
                     <div>
-                        <label for="">Age:</label>
-                        <input type="number" placeholder="-- --">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" placeholder="-- --">
                     </div>
                 </form>
                 <div>
-                    <a href="../../public/index.html">
-                        <button type="button">Back</button>
-                    </a>
-                    <a href="">
-                        <button type="button">Submit</button>
-                    </a>
+                    <button type="button" class="back-btn">Back</button>
+                    <button type="button" id="submit-form">Submit</button>
                 </div>
             </section>
         </main>
+
+        <script src="../scripts/main.js"></script>
 </body>
 </html>
