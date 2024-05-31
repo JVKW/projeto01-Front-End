@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Questions</title>
+        <!-- Links -->
+        <!-- Css -->
+        <link rel="stylesheet" href="../styles/main.css">
+    </head>
+    <body>
+        <figure id="main-figure">
+            <img class="image" src="" alt="Company Character">
+        </figure>
+
+        <main>
+            <section id="form-page-p1" class="form-page">
+                <div>
+                    <h3>Necessities of working in financial markets</h3>
+                    <p>This research is to find the reasons for the failure of people in financial markets. The results of this survey will be emailed to you along with the analysis of our experienced experts.</p>
+                </div>
+                <div>
+                    <a href="../../public/index.html">
+                        <button type="button">Back to Home</button>
+                    </a>
+                    <button type="button" class="next-btn">Fill out the form</button>
+                </div>
+            </section>
+        
+            <section id="form-page-p2" class="form-page hide">
+                <form action="">
+                    <div>
+                        <label for="account-status-form">What is the status of your account?</label>
+                        <select id="account-status-form" name="account-status-form">
+                            <option value="account-not-created">I have not created an account yet.</option>
+                            <option value="account-created">I have created an account yet.</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>In which financial markets do you operate?</label><br>
+                        
+                        <input type="radio" name="market_area" value="stock_market">
+                        <label>stock market</label><br>
+                        
+                        <input type="radio" name="market_area" value="foreign_market">
+                        <label>foreign market</label><br>
+                        
+                        <input type="radio" name="market_area" value="commodity">
+                        <label>commodity</label><br>
+                        
+                        <input type="radio" name="market_area" value="bond_market">
+                        <label>bond market</label><br>
+                        
+                        <input type="radio" name="market_area" value="cryptocurrecy_market">
+                        <label>cryptocurrency market</label><br>
+                    </div>
+                </form>
+                <div>
+                    <button type="button" class="back-btn">Back</button>
+                    <button type="button" class="next-btn">Next</button>
+                    <button type="button" class="skip-btn">Skip</button>
+                </div>
+            </section>
+        
+            <section id="form-page-p3" class="form-page hide">
+                <form action="">
+                    <div>
+                        <label for="invest-question-form">How do you decide to invest?</label>
+                        <select id="invest-question-form" name="invest-question-form">
+                            <option value="not-invested">I have not invested yet.</option>
+                            <option value="invested">I have invested yet.</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>What resources have you used or are you using for your training?</label><br>
+                        
+                        <input type="radio" name="market_investment" value="Books_articles">
+                        <label>Books and articles</label><br>
+                        
+                        <input type="radio" name="market_investment" value="youtube_videos">
+                        <label>YouTube tutorial videos</label><br>
+                        
+                        <input type="radio" name="market_investment" value="online_f2f">
+                        <label>online or face to face courses</label><br>
+                        
+                        <input type="radio" name="market_investment" value="experience">
+                        <label>experience with little investment</label><br>
+                    </div>
+                </form>
+                <div>
+                    <button type="button" class="back-btn">Back</button>
+                    <button type="button" class="next-btn">Next</button>
+                    <button type="button" class="skip-btn">Skip</button>
+                </div>
+            </section>
+        
+            <section id="form-page-p4" class="form-page hide">
+                <form action="">
+                    <label for="investment_details">If you or someone close to you has already made a loss on the investment, write down the details</label>
+        
+                    <textarea name="investment_details" id="investment_details" rows="5" cols="50"></textarea>
+                </form>
+                <div>
+                    <button type="button" class="back-btn">Back</button>
+                    <button type="button" class="next-btn">Next</button>
+                    <button type="button" class="skip-btn">Skip</button>
+                </div>
+            </section>
+        
+            <section id="form-page-p5" class="form-page hide">
+                <form action="">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Nasser Toghiri">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="N.Toghiri@Gmail.com">
+                    </div>
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" placeholder="-- --">
+                    </div>
+                </form>
+                <div>
+                    <button type="button" class="back-btn">Back</button>
+                    <button type="button" id="submit-form">Submit</button>
+                </div>
+            </section>
+        </main>
+
+        <script src="../scripts/main.js"></script>
+</body>
+</html>
