@@ -9,6 +9,13 @@
     --button-text-secundary-color: #000;
     --button-checkmark: #3EB25E;
 
+    --select-border-primary: #00000040;
+    --select-border-secundary: #475242;
+
+    --input-border-primary: #00000040;
+
+    --textarea-border-primary: #00000040;
+
     /* Typography */
     --font-family-sans-Roboto: 'Roboto', sans-serif;
     

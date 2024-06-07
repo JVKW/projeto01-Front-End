@@ -31,16 +31,26 @@ body {
 
 figure {
     position: absolute;
-    top: 51px;
-    left: 212px;
-    width: 431px;
-    height: 661px;
     max-width: 100%;
 }
 
 figure img {
     height: 100%;
     display: block;
+}
+
+.home-image {
+    top: 51px;
+    left: 150px;
+    width: 431px; /* 431 */
+    height: 661px; /* 661 */
+}
+
+.main-figure {
+    left: 87.5px;
+    bottom: 134px;;
+    width: auto;
+    height: auto;
 }
 
 main {
@@ -64,10 +74,130 @@ h1 {
     line-height: 8.13rem; /* 130.08px */
 }
 
+h3 {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 45.7px;
+    text-align: center;
+}
+
 h6 {
     font-size: 1.813em; /* 29px */
     font-weight: 700;
     line-height: 2.124em; /* 33.98px */
+}
+
+p {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32.81px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+label.label-form-question {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.custom-radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.custom-radio input[type="radio"] {
+    display: none;
+}
+
+.custom-radio .radio-button {
+    width: 26px;
+    height: 26px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    background-color: #3EB25E4D;
+    transition: all 0.3s ease;
+}
+
+.custom-radio .radio-button::after {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-color: #3EB25E;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.3s ease;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-button::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-radio:hover .radio-button {
+    background-color: #3ba559fb;;
+}
+
+.custom-radio:hover .radio-button::after {
+    background: #3EB25E;
+}
+
+label {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30.47px;
+    text-align: left;    
+}
+
+select {
+    width: 459px;
+    height: 52px;
+    border-radius: 20px;
+    border: 1px solid var(--select-border-primary);
+    padding: 9px 13px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30.47px;
+    text-align: left;
+}
+
+textarea {
+    border-radius: 20px;
+    border: 1px solid var(--textarea-border-primary);
+    resize: none;
+}
+
+select:hover {
+    border-color: var(--select-border-secundary);
+}
+
+select:focus {
+    border-color: var(--select-border-primary);
+}
+
+input {
+    width: 459px;
+    height: 52px;
+    top: 352px;
+    left: 744px;
+    gap: 0px;
+    border-radius: 20px;
+    border: 1px solid var(--input-border-primary);
+}
+
+input::placeholder {
+    padding: 9px 15px 3px 15px;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 31.64px;
 }
 
 button {
@@ -82,13 +212,21 @@ button {
     font-size: 1.375em;
 }
 
-#button:hover {
+button[type='button']:hover {
     color: var(--button-text-secundary-color);
     background-color: var(--button-secundary);
+    transition: all 0.3s ease;
 }
 
 main div {
     margin-bottom: 66px;
+}
+
+.label-form-question {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30.47px;
+    text-align: left;
 }
 
 @media (max-width: 1200px) {
