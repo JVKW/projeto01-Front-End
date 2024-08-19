@@ -27,6 +27,10 @@ body {
     background-color: var(--background-primary);
     color: var(--text-color);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 figure {
@@ -56,16 +60,15 @@ figure img {
 main {
     position: absolute;
     top: 232px;
-    left: 723px;
+    left: 732px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    width: 473px;
+    width: 500px;
     height: 298.55px;
     gap: 0px;
-    border-radius: 35px 0px 0px 0px;
 }
 
 h1 {
@@ -79,6 +82,7 @@ h3 {
     font-weight: 700;
     line-height: 45.7px;
     text-align: center;
+    margin-bottom: 14px;
 }
 
 h6 {
@@ -123,6 +127,7 @@ label.label-form-question {
     position: relative;
     background-color: #3EB25E4D;
     transition: all 0.3s ease;
+    margin-right: 24px;
 }
 
 .custom-radio .radio-button::after {
@@ -150,6 +155,22 @@ label.label-form-question {
     background: #3EB25E;
 }
 
+form {
+    text-align: left; /* Alinha texto à esquerda */
+    display: flex; /* Define como flexbox */
+    flex-direction: column; /* Alinha itens em coluna */
+    justify-content: flex-start; /* Alinha itens à esquerda */
+}
+
+.form-input div {
+    margin-bottom: 27px;
+}
+
+form .form-option-choice {
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
 label {
     font-size: 26px;
     font-weight: 400;
@@ -173,6 +194,9 @@ textarea {
     border-radius: 20px;
     border: 1px solid var(--textarea-border-primary);
     resize: none;
+    height: 277px;
+    width: 100%;
+    margin-bottom: 62px;
 }
 
 select:hover {
@@ -186,18 +210,16 @@ select:focus {
 input {
     width: 459px;
     height: 52px;
-    top: 352px;
-    left: 744px;
-    gap: 0px;
     border-radius: 20px;
+    text-align: left;
+    padding: 9px 15px;
+    font-size: 27px;
     border: 1px solid var(--input-border-primary);
 }
 
 input::placeholder {
-    padding: 9px 15px 3px 15px;
     font-size: 27px;
-    font-weight: 400;
-    line-height: 31.64px;
+    justify-content: center;
 }
 
 button {
@@ -210,6 +232,23 @@ button {
     color: var(--border-text-primary);
     font-weight: 700;
     font-size: 1.375em;
+    text-align: center;
+    gap: 27px;
+}
+
+.form-button-div {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 320px;
+    gap: 14px;
+}
+
+.form-button-div button:nth-child(3):last-child {
+    grid-column: span 2;
+    width: calc(100% - 27px);
 }
 
 button[type='button']:hover {
@@ -217,6 +256,7 @@ button[type='button']:hover {
     background-color: var(--button-secundary);
     transition: all 0.3s ease;
 }
+
 
 main div {
     margin-bottom: 66px;
@@ -227,6 +267,10 @@ main div {
     font-weight: 700;
     line-height: 30.47px;
     text-align: left;
+}
+
+.label-input-question {
+    margin-left: 10px;
 }
 
 @media (max-width: 1200px) {
